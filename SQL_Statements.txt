@@ -1,0 +1,43 @@
+
+========== SQL QUESTIONS FROM EMPLOYMENT TEST =======================
+
+I ran all these queries though SQL Fiddle on the Internet
+
+1.Write a SQL Query to pull all customers
+
+	SELECT * From Customers;
+
+2.Write a SQL Query to pull all customers that have orders (no duplicatese)
+
+	SELECT DISTINCT Customers.Name
+		FROM Customers, Orders
+		WHERE Customers.id = Orders.CUSTOMER_ID;
+
+3.Write a SQL Query to pull all customers that do not have orders
+
+	SELECT Name 
+		FROM Customers 
+		LEFT JOIN Orders on Customers.id = Orders.CUSTOMER_ID
+		WHERE Orders.CUSTOMER_ID is NULL
+
+4.If you had to create an index on these tables, which fields would you most likely index and why?
+
+	I would create an index on "Customer Name" since this is the most likely search term
+
+	I would create an index on "Customer_ID" since this a most likely search team and would
+	speed up the join query of customer with customer orders
+
+5.Write a query that lists each customer name, email, and the number of order they have
+
+	SELECT DISTINCT Customers.Name,
+		   (SELECT COUNT(*) FROM Orders where Customers.ID = Orders.CUSTOMER_ID)
+			FROM Customers, Orders
+
+6.Write a query that pulls all customers that have between 2 and 5 orders
+
+SELECT DISTINCT Customers.Name,
+		(SELECT Count(*) From Orders where Customers.ID = Orders.CUSTOMER_ID) as CountOrders
+		FROM Customers, Orders
+        WHERE (CountOrders > 1) and (CountOrders < 6)
+
+	=================== END =============================

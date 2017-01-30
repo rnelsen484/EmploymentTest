@@ -8,7 +8,7 @@ namespace BloominBrandsEmploymentTest
 {
     
 
-    public class ComputeTriangleType
+    public class RobertsComputeTriangleType
     {
         public enum TriangleType
         {

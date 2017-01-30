@@ -55,9 +55,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BloominBrandsEmploymentTest\BloominBrandsEmploymentTest.csproj">
+    <ProjectReference Include="..\BloominBrandsEmploymentTest\Question_1_Triangle.csproj">
       <Project>{8D10F3AD-7833-444D-848C-2AD090C4FECD}</Project>
-      <Name>BloominBrandsEmploymentTest</Name>
+      <Name>Question_1_Triangle</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

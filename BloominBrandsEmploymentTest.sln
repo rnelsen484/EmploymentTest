@@ -3,9 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloominBrandsEmploymentTest", "BloominBrandsEmploymentTest\BloominBrandsEmploymentTest.csproj", "{8D10F3AD-7833-444D-848C-2AD090C4FECD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_1_Triangle", "BloominBrandsEmploymentTest\Question_1_Triangle.csproj", "{8D10F3AD-7833-444D-848C-2AD090C4FECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloominBrandsEmploymentTestTests", "BloominBrandsEmploymentTestTests\BloominBrandsEmploymentTestTests.csproj", "{D4998668-4F40-471A-A8AF-F33431058826}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_1_TriangleTests", "BloominBrandsEmploymentTestTests\Question_1_TriangleTests.csproj", "{D4998668-4F40-471A-A8AF-F33431058826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_2_LinkedList", "Question_2_LinkedList\Question_2_LinkedList.csproj", "{97544A28-E10C-4A45-93A7-AA68B91BE32F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_3_PrimeFactors", "Question_3_PrimeFactors\Question_3_PrimeFactors.csproj", "{DFA2BEAA-0402-414B-B980-500C6F8450DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_2_LinkedListTests", "Question_2_LinkedListTests\Question_2_LinkedListTests.csproj", "{5A232AE0-E495-4C23-89F3-17F3B7B09CF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_3_PrimeFactorsTests", "Question_3_PrimeFactorsTests\Question_3_PrimeFactorsTests.csproj", "{81233D52-B664-48B0-8DCE-89794EB50AB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C88FC32-B686-4266-925C-D333313F7AB6}"
+	ProjectSection(SolutionItems) = preProject
+		SQL_Statements.txt = SQL_Statements.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +34,22 @@ Global
 		{D4998668-4F40-471A-A8AF-F33431058826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4998668-4F40-471A-A8AF-F33431058826}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4998668-4F40-471A-A8AF-F33431058826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97544A28-E10C-4A45-93A7-AA68B91BE32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97544A28-E10C-4A45-93A7-AA68B91BE32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97544A28-E10C-4A45-93A7-AA68B91BE32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97544A28-E10C-4A45-93A7-AA68B91BE32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA2BEAA-0402-414B-B980-500C6F8450DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA2BEAA-0402-414B-B980-500C6F8450DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA2BEAA-0402-414B-B980-500C6F8450DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA2BEAA-0402-414B-B980-500C6F8450DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A232AE0-E495-4C23-89F3-17F3B7B09CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A232AE0-E495-4C23-89F3-17F3B7B09CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A232AE0-E495-4C23-89F3-17F3B7B09CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A232AE0-E495-4C23-89F3-17F3B7B09CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81233D52-B664-48B0-8DCE-89794EB50AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81233D52-B664-48B0-8DCE-89794EB50AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81233D52-B664-48B0-8DCE-89794EB50AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81233D52-B664-48B0-8DCE-89794EB50AB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

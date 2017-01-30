@@ -11,25 +11,25 @@ namespace BloominBrandsEmploymentTest.Tests
     [TestClass()]
     public class Form1Tests
     {
-        ComputeTriangleType computeTriangleTest = new ComputeTriangleType();
+        RobertsComputeTriangleType computeTriangleTest = new RobertsComputeTriangleType();
 
         [TestMethod()]
         public void Test_ZeroValues()
         {
-            if(computeTriangleTest.Compute(0, 1, 1) !=
-                        ComputeTriangleType.TriangleType.Error)
+            if (computeTriangleTest.Compute(0, 1, 1) !=
+                        RobertsComputeTriangleType.TriangleType.Error)
             {
                 Assert.Fail("Zero, or less, paramter error");
             }
 
-            if (computeTriangleTest.Compute(1, 0, 1) != 
-                        ComputeTriangleType.TriangleType.Error)
+            if (computeTriangleTest.Compute(1, 0, 1) !=
+                        RobertsComputeTriangleType.TriangleType.Error)
             {
                 Assert.Fail("Zero, or less, paramter error");
             }
 
             if (computeTriangleTest.Compute(1, 1, 0) !=
-                        ComputeTriangleType.TriangleType.Error)
+                        RobertsComputeTriangleType.TriangleType.Error)
             {
                 Assert.Fail("Zero, or less, paramter error");
             }
@@ -38,8 +38,8 @@ namespace BloominBrandsEmploymentTest.Tests
         [TestMethod()]
         public void Test_Equilateral()
         {
-            if (computeTriangleTest.Compute(1,1,1) !=
-                    ComputeTriangleType.TriangleType.Equilateral)
+            if (computeTriangleTest.Compute(1, 1, 1) !=
+                    RobertsComputeTriangleType.TriangleType.Equilateral)
             {
                 Assert.Fail("Failed Equilateral Test");
             }
@@ -49,19 +49,19 @@ namespace BloominBrandsEmploymentTest.Tests
         public void Test_Isosceles()
         {
             if (computeTriangleTest.Compute(1, 1, 2) !=
-                    ComputeTriangleType.TriangleType.Isosceles)
+                    RobertsComputeTriangleType.TriangleType.Isosceles)
             {
                 Assert.Fail("Failed Isosceles Test");
             }
 
             if (computeTriangleTest.Compute(2, 1, 1) !=
-                     ComputeTriangleType.TriangleType.Isosceles)
+                     RobertsComputeTriangleType.TriangleType.Isosceles)
             {
                 Assert.Fail("Failed Isosceles Test");
             }
 
             if (computeTriangleTest.Compute(1, 2, 1) !=
-                   ComputeTriangleType.TriangleType.Isosceles)
+                   RobertsComputeTriangleType.TriangleType.Isosceles)
             {
                 Assert.Fail("Failed Isosceles Test");
             }
@@ -71,7 +71,7 @@ namespace BloominBrandsEmploymentTest.Tests
         public void Test_Scalene()
         {
             if (computeTriangleTest.Compute(1, 2, 3) !=
-                   ComputeTriangleType.TriangleType.Scalene)
+                   RobertsComputeTriangleType.TriangleType.Scalene)
             {
                 Assert.Fail("Failed Scalene Test");
             }
