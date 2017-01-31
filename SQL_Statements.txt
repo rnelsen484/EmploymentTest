@@ -35,9 +35,10 @@ I ran all these queries though SQL Fiddle on the Internet
 
 6.Write a query that pulls all customers that have between 2 and 5 orders
 
-SELECT DISTINCT Customers.Name,
-		(SELECT Count(*) From Orders where Customers.ID = Orders.CUSTOMER_ID) as CountOrders
-		FROM Customers, Orders
-        WHERE (CountOrders > 1) and (CountOrders < 6)
+		SELECT C.Name As CustomerName, COUNT(O.Customer_ID) As TotalOrders
+			FROM Customers AS C
+			INNNER JOIN Orders AS O ON C.ID = O.Customer_ID 
+			GROUP BY O.Customer_ID
+			HAVING COUNT(O.Customer_ID) BETWEEN 2 AND 5
 
 	=================== END =============================
